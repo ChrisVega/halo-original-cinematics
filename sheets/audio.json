@@ -1,0 +1,398 @@
+{
+  "what": "one row = one sound of the original's A10 cutscene (x10)",
+  "note": "starts_at_s is filled from the original's own cutscene script; nothing is guessed",
+  "columns": [
+    "file",
+    "speaker",
+    "kind",
+    "length_s",
+    "starts_at_s",
+    "source"
+  ],
+  "rows": [
+    {
+      "file": "sound_dialog_x10_ass01.wav",
+      "speaker": "the assault trooper",
+      "kind": "voice",
+      "length_s": 2.23,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_ass02.wav",
+      "speaker": "the assault trooper",
+      "kind": "voice",
+      "length_s": 4.32,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_ass03.wav",
+      "speaker": "the assault trooper",
+      "kind": "voice",
+      "length_s": 2.04,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_ass04.wav",
+      "speaker": "the assault trooper",
+      "kind": "voice",
+      "length_s": 2.41,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor01.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 1.87,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor02.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 2.98,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor03.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 4.48,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor04.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 3.67,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor04b.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 2.19,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor05.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 3.33,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor05b.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 9.76,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor06.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 0.75,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor07.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 0.37,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor08.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 1.07,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor09.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 4.11,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor10.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 7.67,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor11.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 4.28,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_cor12.wav",
+      "speaker": "Cortana",
+      "kind": "voice",
+      "length_s": 6.1,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_keyes01.wav",
+      "speaker": "Captain Keyes",
+      "kind": "voice",
+      "length_s": 3.15,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_keyes02.wav",
+      "speaker": "Captain Keyes",
+      "kind": "voice",
+      "length_s": 3.32,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_keyes03.wav",
+      "speaker": "Captain Keyes",
+      "kind": "voice",
+      "length_s": 1.97,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_keyes04.wav",
+      "speaker": "Captain Keyes",
+      "kind": "voice",
+      "length_s": 1.49,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_keyes05.wav",
+      "speaker": "Captain Keyes",
+      "kind": "voice",
+      "length_s": 3.81,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_keyes06.wav",
+      "speaker": "Captain Keyes",
+      "kind": "voice",
+      "length_s": 1.5,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_keyes07.wav",
+      "speaker": "Captain Keyes",
+      "kind": "voice",
+      "length_s": 1.0,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_keyes08.wav",
+      "speaker": "Captain Keyes",
+      "kind": "voice",
+      "length_s": 0.89,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_keyes09.wav",
+      "speaker": "Captain Keyes",
+      "kind": "voice",
+      "length_s": 2.41,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_mar01.wav",
+      "speaker": "the technician (Mar)",
+      "kind": "voice",
+      "length_s": 1.45,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt01.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 2.22,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt05.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 13.57,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt05b.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 1.42,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt05c.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 15.01,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt05d.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 1.73,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt05e.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 21.75,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt05f.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 1.89,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt05g.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 5.7,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt05h.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 1.06,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt06.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 3.78,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt07.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 3.3,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_sgt08.wav",
+      "speaker": "Sergeant Johnson",
+      "kind": "voice",
+      "length_s": 2.08,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_dialog_x10_tec01.wav",
+      "speaker": "the technician (Mar)",
+      "kind": "voice",
+      "length_s": 2.23,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_sinomatixx_foley_x10_foley1.wav",
+      "speaker": "unknown",
+      "kind": "foley",
+      "length_s": 44.19,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_sinomatixx_foley_x10_foley2.wav",
+      "speaker": "unknown",
+      "kind": "foley",
+      "length_s": 41.29,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_sinomatixx_foley_x10_foley3.wav",
+      "speaker": "unknown",
+      "kind": "foley",
+      "length_s": 27.07,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_sinomatixx_x10_music01.wav",
+      "speaker": "unknown",
+      "kind": "music",
+      "length_s": 114.3,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_sinomatixx_x10_music02.wav",
+      "speaker": "unknown",
+      "kind": "music",
+      "length_s": 64.55,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_sinomatixx_x10_music03.wav",
+      "speaker": "unknown",
+      "kind": "music",
+      "length_s": 17.5,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    },
+    {
+      "file": "sound_sinomatixx_x10_music04.wav",
+      "speaker": "unknown",
+      "kind": "music",
+      "length_s": 38.72,
+      "starts_at_s": null,
+      "source": "Halo CE sound banks, the player's own Master Chief Collection"
+    }
+  ]
+}
