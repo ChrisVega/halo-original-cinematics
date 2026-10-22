@@ -1,0 +1,16 @@
+{
+  "what": "one row = one shot of the original's bridge cutscene",
+  "source": "the original's own cutscene script (CE A10, x10) and the recording",
+  "columns": [
+    "id",
+    "ce_camera_script",
+    "blend_ms",
+    "duration_s",
+    "actors",
+    "dialogue",
+    "music",
+    "shot_adjust",
+    "status"
+  ],
+  "rows": []
+}

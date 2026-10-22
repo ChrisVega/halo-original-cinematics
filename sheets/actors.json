@@ -1,0 +1,16 @@
+{
+  "what": "one row = one actor in the remake's bridge",
+  "source": "the original's cutscene script and the recording; positions measured in the remake",
+  "columns": [
+    "name",
+    "remake_tag",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "facing_deg",
+    "animation",
+    "action",
+    "status"
+  ],
+  "rows": []
+}

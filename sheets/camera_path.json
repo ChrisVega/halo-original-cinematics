@@ -1,0 +1,21 @@
+{
+  "what": "one row = one camera key of the original's bridge cutscene",
+  "source": "recorded from the original Halo CE running on this PC (game clock + camera dump)",
+  "units": "Halo CE units; the remake is 30.48 cm to the unit, Y flipped",
+  "columns": [
+    "shot",
+    "time_s",
+    "pos_x",
+    "pos_y",
+    "pos_z",
+    "fwd_x",
+    "fwd_y",
+    "fwd_z",
+    "up_x",
+    "up_y",
+    "up_z",
+    "fov_deg",
+    "source_frame"
+  ],
+  "rows": []
+}
