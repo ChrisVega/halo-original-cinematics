@@ -1,0 +1,40 @@
+{
+  "about": "Corrective bones the remake's own animation system drives and a posed mesh leaves stiff. Each row turns 'bone' (component space) by 'share' of the way from how far 'from' has turned since rest to how far 'to' has (0 = with from, 1 = with to). Shoulder fixups at half keep the top of the arm from collapsing when the arm hangs down from the remake's bind pose.",
+  "columns": [
+    "rig",
+    "bone",
+    "from",
+    "to",
+    "share"
+  ],
+  "rows": [
+    [
+      "captain",
+      "ShoulderFixup_L",
+      "Scapula_L",
+      "Shoulder_L",
+      0.5
+    ],
+    [
+      "captain",
+      "ShoulderFixup_R",
+      "Scapula_R",
+      "Shoulder_R",
+      0.5
+    ],
+    [
+      "crewman",
+      "ShoulderFixup_L",
+      "Scapula_L",
+      "Shoulder_L",
+      0.5
+    ],
+    [
+      "crewman",
+      "ShoulderFixup_R",
+      "Scapula_R",
+      "Shoulder_R",
+      0.5
+    ]
+  ]
+}

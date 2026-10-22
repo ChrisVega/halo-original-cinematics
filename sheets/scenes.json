@@ -1,0 +1,101 @@
+{
+ "about": "Which remake cutscene is replaced by which original script. trigger = remake LevelSequence asset name pattern (Lua pattern) that starts the takeover; skip = remake sequences dropped while the original plays (the original covers them). framing = keep-the-subject-in-frame guard over the original camera (subject = the character id whose head is watched): yaw_limit = largest share of the half-FOV his head may sit off centre, pitch_low/pitch_high = how far below/above centre (share of the vertical half-FOV) it may sit, min_dist = closest the camera gets to his head (cm) while he is in frame, min_dist_off = closest while he is beside the frame, follow = which shots it acts on: only when his head starts within follow x half-FOV, smooth = per-frame blend of the correction. hide: remake actor classes hidden while the original plays (ours stand in for them). framing.max_dist: cm; a subject further from the camera than this is not in the shot (the hangar), so the guard leaves the camera alone. source_aspect/target_aspect: CE's 70 deg horizontal FOV is for 4:3; widened to 16:9 keeping the original's full vertical view (Hor+). letterbox_aspect = 1.7778: no bars. Measured (probe-out/run.log, /tmp fit): with the original camera numbers and the cast on the original's spots, Keyes' head is inside the original 4:3 frame in 293/313 samples (current pitch sign beats flipped 281); any letterbox crop cuts his head off the opening shot (y -0.69 of the 4:3 half-height). framing null = original camera untouched. music_start: a looping sound the original started before the scripts we run (x10 starts x10_music01, then 60 ticks + autumn_glory_1 630 ticks + autumn_glory_2 before the bridge; measured on the original engine: 1306 ticks = 43.5 s into the track at the bridge's first line); played as music from 'at' seconds when the takeover starts. (0.2.68: the remake's intro video is blocked as it opens, so there is no flyby before the bridge: music_start.at = 0, the theme from its start.) closeup: when the original camera is within close_cm of the original Keyes' head (his CE model posed by the same frame), the camera moves by (our Head_M - original head) so the original's offset from his head is kept (the eye close-up keyes_to_cortana_2 is 12 cm away: the remake's face sits a few cm elsewhere and fell off frame); the shift fades out by fade_cm. smooth_camera: the original moves its camera 30 times a second (script ticks); true = the shown camera is blended between the last two ticks every rendered frame (one tick behind), cuts (a jump over jump_cm) are not blended. aim: the remake's floors are not the original's (the walk to the chair is 1.2 m higher in the remake), so the original camera aimed at the original's head misses ours: the camera turns by the angle between the original's head and ours, only while the original's head is inside the frame and at least close_cm (the closeup rule) away; max_deg caps the turn, smooth = per-frame blend, reset on a cut. unblock: remake scenery the original did not have (the display base in display_rev, solid where the original was a see-through hologram): every 'every' frames a line from the camera to Keyes' bones is traced; a hit inside the first 'share' of the way is hidden for that shot (max_hits per shot) and shown again at the next cut and when the scene ends. (0.2.79: aim and unblock off: aim read the original's head from the recording's z, which the original engine snaps to the ground, so it chased a phantom 1.2 m gap and bobbed with his head; unblock hit the same mesh four times: hidden meshes still block traces, and it did not clear the view.) shot_adjust: per camera point, cm in the camera's own directions (right, up, forward) added to the original's position (creator's calls: display_rev up over the remake's solid nav console; keyes_to_cortana_2 right and back so his face is in the eye close-up). chain_ease = 'out': a camera move that interrupts another (the walk to the chair is three chained pans) starts at speed and only eases at its end, instead of stopping and starting again. skip_objects: script objects never drawn (creator: the panic crew vanish on camera where the original deleted them off screen). walk_off: these objects are not deleted when the script deletes them (on camera in the remake): they keep walking straight ahead, and all go at the cut to 'until' (creator's call: removed at Keyes' eye close-up). start_facing: degrees (original's angle convention) an object faces when created, before its own script moves it (creator: panic crewman 1 faces the big screen behind him until the alarm). preroll_video: a video of the creator's own, played in the remake's video slot before the original scene takes over (the remake's own video is swapped for it and its sound muted); the path is relative to the mod folder. The remake's cutscene is ended when the video is over, then the original scene plays, then the mission starts. preroll_seconds: how long the creator's video runs, in seconds; the mod waits this long before its own scene takes over.",
+ "columns": [
+  "id",
+  "map",
+  "ce_script",
+  "trigger",
+  "skip",
+  "characters",
+  "status",
+  "source_aspect",
+  "target_aspect",
+  "framing",
+  "hide",
+  "letterbox_aspect",
+  "music_start",
+  "closeup",
+  "smooth_camera",
+  "aim",
+  "unblock",
+  "shot_adjust",
+  "chain_ease",
+  "skip_objects",
+  "walk_off",
+  "start_facing",
+  "preroll_video",
+  "preroll_seconds"
+ ],
+ "rows": [
+  [
+   "a10_intro",
+   "a10",
+   "bridge,hangar_cryo",
+   "LS_m01_POA%-cin01_sc01",
+   [
+    "LS_m01_POA%-cin02",
+    "LS_m01_POA%-cin01_sc03",
+    "LS_m01_POA%-cin01_sc05"
+   ],
+   [
+    "keyes",
+    "cortana",
+    "chief",
+    "crew",
+    "crewman"
+   ],
+   "building",
+   1.3333,
+   1.7778,
+   null,
+   [
+    "BP_KeyesBipedActor_C",
+    "BP_MaleCrewmanBipedActor_C",
+    "BP_FemaleCrewmanBipedActor_C"
+   ],
+   1.7778,
+   {
+    "sound": "sound\\sinomatixx\\x10_music01",
+    "at": 0
+   },
+   {
+    "close_cm": 60,
+    "fade_cm": 100
+   },
+   {
+    "jump_cm": 60
+   },
+   null,
+   null,
+   {
+    "display_rev_1a": {
+     "up": 25
+    },
+    "display_rev_1b": {
+     "up": 15
+    },
+    "keyes_to_cortana_2": {
+     "right": 16,
+     "up": -4,
+     "forward": -8
+    }
+   },
+   "out",
+   null,
+   {
+    "objects": [
+     "x10_crew_panic_1",
+     "x10_crew_panic_2",
+     "x10_crew_panic_3",
+     "x10_crew_panic_4",
+     "x10_crew_panic_5",
+     "x10_crew_panic_6"
+    ],
+    "until": "keyes_to_cortana_2"
+   },
+   null,
+   "media/into_outer.mp4",
+   43
+  ]
+ ]
+}

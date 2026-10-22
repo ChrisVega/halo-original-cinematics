@@ -1,0 +1,95 @@
+{
+ "about": "Every hook into the remake and every reader of the player's MCC. status: verified = seen working in the running game on this PC.",
+ "columns": [
+  "id",
+  "what",
+  "how",
+  "status"
+ ],
+ "rows": [
+  [
+   "loader",
+   "UE4SS in the remake",
+   "RE-UE4SS experimental + Steam config + our GUObjectHashTables signature",
+   "verified"
+  ],
+  [
+   "video_detect",
+   "know when an original-replaced video starts",
+   "poll MediaPlayer MP_ExternalPreroll url contains CinematicsPreRenders/A15/m01_POA-cin01",
+   "verified"
+  ],
+  [
+   "video_stop",
+   "stop the remake video",
+   "MediaPlayer:Close()",
+   "verified"
+  ],
+  [
+   "camera",
+   "original camera shots",
+   "spawned CameraActor + PlayerController:SetViewTargetWithBlend, CE point -> UE (x*304.8, -y*304.8, z*304.8). Facing: the point's angles (a,b,c) are world-axis turns, forward = Rx(c)Ry(-b)Rz(a)x, never rolled; moves: position smootherstep over the script's ticks, facing eases with it (rule search devtools/fit_camera_rules.py). FOV 70 deg horizontal for 4:3, widened Hor+ to 16:9, no bars.",
+   "verified against the original engine's camera recorded in the open Halo port (debug_camera_save): facing exact on all 11 still shots; move curves fitted"
+  ],
+  [
+   "floor",
+   "keep Keyes' soles on the bridge floor",
+   "every frame: KismetSystemLibrary:LineTraceSingle straight down under him (z+300 -> z-500), ignoring the cast; actor z = hit z + rest sole offset - posed foot z",
+   "built; verifies in the next test"
+  ],
+  [
+   "streaming",
+   "load the set around the camera",
+   "WorldPartitionStreamingSourceComponent on camera",
+   "added; bridge not visible yet: investigating"
+  ],
+  [
+   "keyes_mesh",
+   "remake Keyes model",
+   "PoseableMeshComponent x3 (body, head, hair) on a spawned actor",
+   "verified (loads, 75 body bones)"
+  ],
+  [
+   "posing",
+   "per-bone pose",
+   "PoseableMeshComponent:SetBoneRotationByName component space",
+   "todo"
+  ],
+  [
+   "voice",
+   "original voice lines",
+   "vgmstream-cli on halo1\\sound\\pc\\sounds_dialogs.fsb -> wav cache -> MediaPlayer + MediaSoundComponent",
+   "decode verified offline; in-game playback todo"
+  ],
+  [
+   "cortana_mesh",
+   "Cortana placeholder",
+   "ProceduralMeshComponent from CE cortana.mod2 (12-arg CreateMeshSection_LinearColor)",
+   "reader verified offline; in-game todo"
+  ],
+  [
+   "ce_script",
+   "original x10 script",
+   "decompile scenario script nodes from a10.map",
+   "verified offline"
+  ],
+  [
+   "ce_cameras_flags",
+   "camera points and marks",
+   "scenario cutscene blocks",
+   "verified offline"
+  ],
+  [
+   "ce_recordings",
+   "Keyes walks",
+   "recorded animation unit-control stream",
+   "decoded offline; movement model todo"
+  ],
+  [
+   "ce_animations",
+   "gestures + idles",
+   "antr decode incl. compressed",
+   "verified offline"
+  ]
+ ]
+}

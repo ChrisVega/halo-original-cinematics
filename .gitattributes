@@ -1,0 +1,9 @@
+﻿* text=auto eol=lf
+*.lua text eol=lf
+*.py text eol=lf
+*.mp4 binary
+*.dll binary
+*.exe binary
+*.ubulk binary
+*.ucas binary
+*.utoc binary

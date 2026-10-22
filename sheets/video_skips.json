@@ -1,0 +1,10 @@
+{
+ "about": "Remake pre-rendered intro videos removed outright (no original scene replaces them). trigger = remake LevelSequence name pattern (Lua pattern); every playing sequence that matches is sent to its end at once, so the level carries on from the state the video leaves (B30: seated in the Pelican). video = the movie folder under CinematicsPreRenders; the video player is closed and its source pointed at nothing the moment it opens, and the sound posted with it stopped. Creator: 'prevent the video from starting or stop it as soon as it starts'. (0.2.994: row removed for now: sending the intro to its end skipped the seated start; creator: flight first, video later.)",
+ "columns": [
+  "id",
+  "map",
+  "trigger",
+  "video"
+ ],
+ "rows": []
+}

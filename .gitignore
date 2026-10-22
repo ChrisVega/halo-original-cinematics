@@ -1,0 +1,17 @@
+﻿dist/
+tools/dl/
+work/extracted/
+work/hsc/
+work/__pycache__/
+work/orig_intro.mp4
+work/a15-scenario.ubulk
+frames/
+shots/
+probe-out/
+audio/
+attachments/
+mod_source_0.2.70/
+mod/OriginalCinematics/lab.log
+mod/OriginalCinematics/probe.log
+mod/OriginalCinematics/tools/ffmpeg/ffmpeg.exe
+mod/OriginalCinematics/dev/

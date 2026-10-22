@@ -1,0 +1,16 @@
+{
+ "about": "Pelican rides flown from the original. path = generated Lua module of samples recorded from the original engine (devtools/ce_record_ride.py -> gen_flight.py: the seated rider's camera ~10/s, relative to touchdown; heading from direction of travel). level = remake world path fragment. pelican_class = remake vehicle class; the ride's Pelican is the one of that class with marines attached (else the nearest to the player). start_when = 'seated': takeover the moment the player is within seat_radius of that Pelican (the remake starts the player seated in it; creator: 'you start in the pelican, just get the flight path working'); the player keeps the seat the remake gave them. land = the remake's own touchdown (x, y, z, yaw), measured by the ride watcher (0.2.99 run): the path is relative to it. lines = original dialog: [sound tag, seconds from ride start] (path t=0 is the teleport, tick 64; original timing: 010 at teleport+285 ticks, 020 after it +30, 030 straight after, 040 when 300 ticks of recording remain, exit at 120 remaining). exit_at = seconds: player let out (input back, detached, walking). Creator: keep the player and marines in the Pelican, move it to the original's start and fly the original's path. sequence = the remake's intro LevelSequence: it keys the Pelican and the seated view after its video (0.2.995 flew a Pelican during the video and the sequence put everything back: the creator saw the normal landing). The ride waits until the video is off, pauses it for the flight, and plays it on at the end. (The B30 Pelican ride work was abandoned; this sheet is empty.)",
+ "columns": [
+  "id",
+  "level",
+  "pelican_class",
+  "path",
+  "start_when",
+  "land",
+  "seat_radius",
+  "lines",
+  "exit_at",
+  "sequence"
+ ],
+ "rows": []
+}

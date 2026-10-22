@@ -1,0 +1,362 @@
+{
+  "about": "Original (CE) skeleton node -> remake bone, per character rig. Rows drive retargeting: the CE node's animated rotation delta (from its rest pose) is applied to the remake bone. 'skip' rows are left at the remake's rest pose (frozen faces are accepted). Neck and head turn again now that the face is placed the way the remake's own Keyes has it (the original's over-the-shoulder look needs them). align: [CE child node, remake child bone] for limbs whose rest poses point differently (the remake's legs rest ~10 deg apart, forearms ~30 deg forward; CE's hang straight): the remake bone is first swung so its rest direction matches the original's, then the original's motion is applied, so he walks with his legs under him. (crewman rig) align [\"inherit\"]: an end bone (hand, foot) with no child to aim by takes its parent's swing, so the wrist/ankle keeps its rest bend (without it the hands bent back by the forearm's ~30 deg). Keyes (captain rig) keeps the 0.2.3 mapping, which the creator approved; crew changes go in the crewman rig.",
+  "columns": [
+    "rig",
+    "ce_node",
+    "remake_bone",
+    "mode",
+    "align"
+  ],
+  "rows": [
+    [
+      "captain",
+      "bip01 pelvis",
+      "Root_M",
+      "rotate+root",
+      []
+    ],
+    [
+      "captain",
+      "bip01 spine",
+      "Spine1_M",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 spine1",
+      "Chest_M",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 neck",
+      "Neck_M",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 head",
+      "Head_M",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 l clavicle",
+      "Scapula_L",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 l upperarm",
+      "Shoulder_L",
+      "rotate",
+      [
+        "bip01 l forearm",
+        "Elbow_L"
+      ]
+    ],
+    [
+      "captain",
+      "bip01 l forearm",
+      "Elbow_L",
+      "rotate",
+      [
+        "bip01 l hand",
+        "Wrist_L"
+      ]
+    ],
+    [
+      "captain",
+      "bip01 l hand",
+      "Wrist_L",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 r clavicle",
+      "Scapula_R",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 r upperarm",
+      "Shoulder_R",
+      "rotate",
+      [
+        "bip01 r forearm",
+        "Elbow_R"
+      ]
+    ],
+    [
+      "captain",
+      "bip01 r forearm",
+      "Elbow_R",
+      "rotate",
+      [
+        "bip01 r hand",
+        "Wrist_R"
+      ]
+    ],
+    [
+      "captain",
+      "bip01 r hand",
+      "Wrist_R",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 l thigh",
+      "Hip_L",
+      "rotate",
+      [
+        "bip01 l calf",
+        "Knee_L"
+      ]
+    ],
+    [
+      "captain",
+      "bip01 l calf",
+      "Knee_L",
+      "rotate",
+      [
+        "bip01 l foot",
+        "Ankle_L"
+      ]
+    ],
+    [
+      "captain",
+      "bip01 l foot",
+      "Ankle_L",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 r thigh",
+      "Hip_R",
+      "rotate",
+      [
+        "bip01 r calf",
+        "Knee_R"
+      ]
+    ],
+    [
+      "captain",
+      "bip01 r calf",
+      "Knee_R",
+      "rotate",
+      [
+        "bip01 r foot",
+        "Ankle_R"
+      ]
+    ],
+    [
+      "captain",
+      "bip01 r foot",
+      "Ankle_R",
+      "rotate",
+      []
+    ],
+    [
+      "captain",
+      "bip01 ponytail1",
+      "",
+      "skip",
+      []
+    ],
+    [
+      "captain",
+      "frame jawbone",
+      "",
+      "skip",
+      []
+    ],
+    [
+      "crewman",
+      "bip01 pelvis",
+      "Root_M",
+      "rotate+root",
+      []
+    ],
+    [
+      "crewman",
+      "bip01 spine",
+      "Spine1_M",
+      "rotate",
+      []
+    ],
+    [
+      "crewman",
+      "bip01 spine1",
+      "Chest_M",
+      "rotate",
+      []
+    ],
+    [
+      "crewman",
+      "bip01 neck",
+      "Neck_M",
+      "rotate",
+      []
+    ],
+    [
+      "crewman",
+      "bip01 head",
+      "Head_M",
+      "rotate",
+      []
+    ],
+    [
+      "crewman",
+      "bip01 l clavicle",
+      "Scapula_L",
+      "rotate",
+      []
+    ],
+    [
+      "crewman",
+      "bip01 l upperarm",
+      "Shoulder_L",
+      "rotate",
+      [
+        "bip01 l forearm",
+        "Elbow_L"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 l forearm",
+      "Elbow_L",
+      "rotate",
+      [
+        "bip01 l hand",
+        "Wrist_L"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 l hand",
+      "Wrist_L",
+      "rotate",
+      [
+        "inherit"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 r clavicle",
+      "Scapula_R",
+      "rotate",
+      []
+    ],
+    [
+      "crewman",
+      "bip01 r upperarm",
+      "Shoulder_R",
+      "rotate",
+      [
+        "bip01 r forearm",
+        "Elbow_R"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 r forearm",
+      "Elbow_R",
+      "rotate",
+      [
+        "bip01 r hand",
+        "Wrist_R"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 r hand",
+      "Wrist_R",
+      "rotate",
+      [
+        "inherit"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 l thigh",
+      "Hip_L",
+      "rotate",
+      [
+        "bip01 l calf",
+        "Knee_L"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 l calf",
+      "Knee_L",
+      "rotate",
+      [
+        "bip01 l foot",
+        "Ankle_L"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 l foot",
+      "Ankle_L",
+      "rotate",
+      [
+        "inherit"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 r thigh",
+      "Hip_R",
+      "rotate",
+      [
+        "bip01 r calf",
+        "Knee_R"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 r calf",
+      "Knee_R",
+      "rotate",
+      [
+        "bip01 r foot",
+        "Ankle_R"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 r foot",
+      "Ankle_R",
+      "rotate",
+      [
+        "inherit"
+      ]
+    ],
+    [
+      "crewman",
+      "bip01 ponytail1",
+      "",
+      "skip",
+      []
+    ],
+    [
+      "crewman",
+      "frame jawbone",
+      "",
+      "skip",
+      []
+    ]
+  ]
+}

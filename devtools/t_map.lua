@@ -1,0 +1,10 @@
+local ce = require("ce_map")
+local m = assert(ce.open(arg[1]))
+print(m.name, m.version, string.format("base=%x tags=%d", m.base, m.tag_count))
+local s = m:read_scenario()
+local c = s.cameras["keyes_x10_deck_1a"]; print("cam", c.pos[1], c.pos[2], c.pos[3], c.rot[1], c.fov)
+local f = s.flags["keyes_deck"]; print("flag", f and f.pos[1], f and f.facing[1])
+local r = s.recordings["keyes_walk_1"]; print("rec", r.length, #r.stream, r.version, r.control_version)
+print("src", #s.source, s.source[0] and #s.source[0].text)
+local n=0 for k,v in pairs(s.bipeds) do n=n+1 end print("bipeds", n)
+for i,b in pairs(s.bipeds) do local nm = s.object_names[b.name]; if nm and nm.name:find("keyes") then print(nm.name, s.biped_palette[b.type], b.pos[1], b.pos[2], b.pos[3]) end end

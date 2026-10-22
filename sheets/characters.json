@@ -1,0 +1,355 @@
+{
+  "about": "Every character the x10 opening needs. ce_tag = the original biped tag (its animation graph has the same path). remake_meshes are the host game's own assets loaded by path at runtime; 'ce_model' placeholders are built at runtime from the player's MCC; 'none' = not drawn in this version (voice and camera still play). Nothing here ships game content. remake_meshes are assembled the way the remake's own BP_KeyesBipedActor is (read in game): part_parent = 1-based index of the mesh each part hangs off with no socket (0 = actor root), part_yaw = its relative yaw. attach_bone 'leader' means that scheme: parts are placed so in the body's rest pose, then the face (and what hangs off it) follows the body's Head_M. follow_bones: [body bone, face bone] pairs; the face (a MetaHuman mesh with its own full skeleton, so its neck skin is weighted to its own spine/neck bones) is posed each frame so those bones turn as the body's do, which keeps the neck seam closed. align_bones: [face bone, body bone] put at the same spot when Keyes is built (seen in game: the face sat low and forward, head sunk into the collar). voice_prefix: voice lines whose name contains it are this character's (his mouth moves with them). jaw: face bone candidates (first found is used), max opening in degrees and the loudness that opens it fully; the opening axis is his left-right axis, sign chosen so the chin goes down. tint: colour (0-1 RGB) put on the material's Color parameter for a ce_model stand-in. jaw.with: [name fragment, weight] for face bones carried round the jaw pivot with it (lips/teeth/tongue hang off the face root on this face). fallback 'h2a': drawn from the player's Halo 2 Anniversary files in their MCC (halo2\\preload\\paks\\shared.pck) and posed by the original's animations for ce_tag; h2a: tpl = template, parts = submeshes drawn (1-based; the mouth pieces are left out), material = translucent unlit material with texture_param/tint_param, tint = RGBA, fallback_material + tint when that material is missing, scale = size drawn at (1 = life size, as the original shows her). part_leader: 1-based mesh whose pose each part follows (0 = posed itself / none): parts on the body's skeleton follow the body, hair and brows follow the face. variants: [[face, hair], ...] swapped in for meshes 2 and 3, picked per object by its name, so a crowd has different faces. h2a.scale: a number, or \"ce\" = drawn at the original model's height (CE Cortana is a ~55 cm hologram on a pedestal; the original's shots are framed for that). h2a.png_filter: ffmpeg filter that turns her texture into the original's violet glow (a floor keeps the dark suit from going black); png_suffix names that cache. floor: foot planting. from = cm above the posed feet the floor trace starts (300 = Keyes' approved 0.2.3 setting; crew 70, under consoles and railings); smooth = ease and reject >40 cm jumps; ignore_cast = the trace passes through the other spawned characters. borrow_graph: another character's original animation graph (same bip01 body) whose unarmed stand/alert idles and walks are used before the character's own armed ones (crewmen use the marine's graph, which only stands holding a pistol or rifle; they borrow the captain's empty-handed ones). \"-\" = none. h2a.use: \"hologram\" (textured translucent; drew black in game) or \"tinted\" (fallback_material in fallback_tint, the material the solid CE stand-in rendered with). bounds_scale: how much bigger each mesh part's visibility box is drawn. The box follows the standing reference pose; seated or running crew moved their head outside it, so the game stopped drawing the face when the camera looked down at them (and parts popped). 1 = unchanged (Keyes). uniforms: the remake's own NavyCrew division materials (Command, Engineer, Science: its red, yellow and blue), one picked per object by its name, put on the body and sleeves slots that wear the default uniform material. h2a.use \"vertex\": her texture tinted by vertex_filter (dark blue to light cyan, as her H2A hologram) sampled at each point and drawn with vertex_material (the engine vertex colour material); checked offline in devtools/render_cortana.py --holo. h2a.vertex_filter now violet (the original CE Cortana, reference/cortana_sheet.jpg). h2a.shimmer: hologram light on her painted colours each frame: base brightness, band = extra brightness of bands sweeping up (band_every cm apart, band_width cm, band_speed cm/s), scanline = depth of fine lines (scanline_freq rad/cm of rest height), flicker = brightness wobble.",
+  "columns": [
+    "id",
+    "ce_tag",
+    "rig",
+    "remake_meshes",
+    "attach_bone",
+    "fallback",
+    "material",
+    "part_parent",
+    "part_yaw",
+    "follow_bones",
+    "align_bones",
+    "voice_prefix",
+    "jaw",
+    "tint",
+    "h2a",
+    "part_leader",
+    "variants",
+    "floor",
+    "borrow_graph",
+    "bounds_scale",
+    "uniforms"
+  ],
+  "rows": [
+    [
+      "keyes",
+      "characters\\captain\\captain",
+      "captain",
+      [
+        "/Game/characters/keyes/Common/Skeleton/SK_Keyes.SK_Keyes",
+        "/Game/MetaHumans/CaptainKeyes_Head/Mesh/Face/SK_CaptainKeyes_Head_Gameplay.SK_CaptainKeyes_Head_Gameplay",
+        "/Game/MetaHumans/CaptainKeyes_Head/Mesh/Hair/SK_CaptainKeyes_Hair_Gameplay.SK_CaptainKeyes_Hair_Gameplay",
+        "/Game/MetaHumans/CaptainKeyes_Head/Mesh/Hair/SK_CaptainKeyes_BrowsLashes_Gameplay.SK_CaptainKeyes_BrowsLashes_Gameplay"
+      ],
+      "leader",
+      "remake",
+      "remake",
+      [
+        0,
+        1,
+        2,
+        2
+      ],
+      [
+        0,
+        -90,
+        0,
+        0
+      ],
+      [
+        [
+          "Root_M",
+          "pelvis"
+        ],
+        [
+          "Spine1_M",
+          "spine_03"
+        ],
+        [
+          "Chest_M",
+          "spine_05"
+        ],
+        [
+          "Neck_M",
+          "neck_01"
+        ],
+        [
+          "Head_M",
+          "head"
+        ]
+      ],
+      [
+        "head",
+        "Head_M"
+      ],
+      "keyes",
+      {
+        "bones": [
+          "FACIAL_C_Jaw",
+          "jaw",
+          "Jaw",
+          "jaw_01",
+          "FACIAL_C_JawRecess"
+        ],
+        "max_deg": 14,
+        "full_rms": 0.18,
+        "with": [
+          [
+            "LipLower",
+            1
+          ],
+          [
+            "LowerLip",
+            1
+          ],
+          [
+            "TeethLower",
+            1
+          ],
+          [
+            "Tongue",
+            1
+          ],
+          [
+            "Chin",
+            1
+          ],
+          [
+            "LipCorner",
+            0.5
+          ]
+        ]
+      },
+      [],
+      {},
+      [
+        0,
+        0,
+        2,
+        2
+      ],
+      [],
+      {
+        "from": 300,
+        "from_feet": false,
+        "smooth": false,
+        "ignore_cast": false
+      },
+      "-",
+      10,
+      []
+    ],
+    [
+      "cortana",
+      "characters\\cortana\\cortana",
+      "cortana",
+      [],
+      "-",
+      "h2a",
+      "/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial",
+      [],
+      [],
+      [],
+      [],
+      "cor",
+      {
+        "max_deg": 12,
+        "full_rms": 0.18
+      },
+      [
+        0.2,
+        0.55,
+        1.0
+      ],
+      {
+        "tpl": "cortana__h.tpl",
+        "parts": [
+          3,
+          4,
+          5,
+          6,
+          8,
+          9
+        ],
+        "material": "/Engine/EngineMaterials/Widget3DPassThrough_Translucent.Widget3DPassThrough_Translucent",
+        "texture_param": "SlateUI",
+        "tint_param": "TintColorAndOpacity",
+        "tint": [
+          1.0,
+          1.0,
+          1.0,
+          0.8
+        ],
+        "fallback_material": "/Engine/BasicShapes/BasicShapeMaterial.BasicShapeMaterial",
+        "scale": "ce",
+        "png_suffix": ".holo2",
+        "png_filter": "format=rgba,colorchannelmixer=rr=.3:rg=.59:rb=.11:gr=.3:gg=.59:gb=.11:br=.3:bg=.59:bb=.11,lutrgb=r=val*0.45+90:g=val*0.35+20:b=val*0.25+190",
+        "use": "vertex",
+        "fallback_tint": [
+          0.55,
+          0.25,
+          1.0,
+          1.0
+        ],
+        "vertex_material": "/Engine/EngineDebugMaterials/VertexColorMaterial.VertexColorMaterial",
+        "vertex_filter": "format=rgba,colorchannelmixer=rr=.3:rg=.59:rb=.11:gr=.3:gg=.59:gb=.11:br=.3:bg=.59:bb=.11,lutrgb=r=val*0.6+80:g=val*0.55+10:b=val*0.25+190",
+        "shimmer": {
+          "base": 1.1,
+          "band": 0.9,
+          "band_every": 22,
+          "band_width": 1.5,
+          "band_speed": 12,
+          "scanline": 0.25,
+          "scanline_freq": 2.2,
+          "flicker": 0.12
+        }
+      },
+      [],
+      [],
+      {},
+      "-",
+      1,
+      []
+    ],
+    [
+      "chief",
+      "characters\\cyborg\\cyborg",
+      "cyborg",
+      [],
+      "-",
+      "none",
+      "-",
+      [],
+      [],
+      [],
+      [],
+      "-",
+      {},
+      [],
+      {},
+      [],
+      [],
+      {},
+      "-",
+      1,
+      []
+    ],
+    [
+      "crew",
+      "characters\\marine\\marine",
+      "marine",
+      [],
+      "-",
+      "none",
+      "-",
+      [],
+      [],
+      [],
+      [],
+      "-",
+      {},
+      [],
+      {},
+      [],
+      [],
+      {},
+      "-",
+      1,
+      []
+    ],
+    [
+      "crewman",
+      "characters\\crewman\\crewman",
+      "crewman",
+      [
+        "/Game/characters/NavyCrew/Default/Mesh/SK_NavyCrew_Body_Default.SK_NavyCrew_Body_Default",
+        "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_01/Face/SK_Marine_Male_01_Head_Gameplay.SK_Marine_Male_01_Head_Gameplay",
+        "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_01/MaleHair/Mesh/SK_Marine_Male_01_HairStyle_01_Gameplay.SK_Marine_Male_01_HairStyle_01_Gameplay",
+        "/Game/characters/NavyCrew/Default/Mesh/SK_NavyCrew_Anatomy_Default.SK_NavyCrew_Anatomy_Default",
+        "/Game/characters/NavyCrew/Default/Mesh/SK_NavyCrew_SleevesDown_Default.SK_NavyCrew_SleevesDown_Default"
+      ],
+      "leader",
+      "remake",
+      "remake",
+      [
+        0,
+        1,
+        2,
+        1,
+        1
+      ],
+      [
+        0,
+        -90,
+        0,
+        0,
+        0
+      ],
+      [
+        [
+          "Root_M",
+          "pelvis"
+        ],
+        [
+          "Spine1_M",
+          "spine_03"
+        ],
+        [
+          "Chest_M",
+          "spine_05"
+        ],
+        [
+          "Neck_M",
+          "neck_01"
+        ],
+        [
+          "Head_M",
+          "head"
+        ]
+      ],
+      [
+        "head",
+        "Head_M"
+      ],
+      "-",
+      {},
+      [],
+      {},
+      [
+        0,
+        0,
+        2,
+        1,
+        1
+      ],
+      [
+        [
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_01/Face/SK_Marine_Male_01_Head_Gameplay.SK_Marine_Male_01_Head_Gameplay",
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_01/MaleHair/Mesh/SK_Marine_Male_01_HairStyle_01_Gameplay.SK_Marine_Male_01_HairStyle_01_Gameplay"
+        ],
+        [
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_02/Face/SK_Marine_Male_02_Head_Gameplay.SK_Marine_Male_02_Head_Gameplay",
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_02/Hair/Mesh/SK_Marine_Male_02_HairStyle_01_Gameplay.SK_Marine_Male_02_HairStyle_01_Gameplay"
+        ],
+        [
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_03/Face/SK_Marine_Male_03_Head_Gameplay.SK_Marine_Male_03_Head_Gameplay",
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_03/Hair/Mesh/SK_Marine_Male_03_HairStyle_02_Gameplay.SK_Marine_Male_03_HairStyle_02_Gameplay"
+        ],
+        [
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_02/Face/SK_Marine_Male_02_Head_Gameplay.SK_Marine_Male_02_Head_Gameplay",
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_02/Hair/Mesh/SK_Marine_Male_02_HairStyle_03_Gameplay.SK_Marine_Male_02_HairStyle_03_Gameplay"
+        ],
+        [
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_01/Face/SK_Marine_Male_01_Head_Gameplay.SK_Marine_Male_01_Head_Gameplay",
+          "/Game/MetaHumans/Marine_Male_Game_Mesh_Head_01/MaleHair/Mesh/SK_Marine_Male_01_HairStyle_03_Gameplay.SK_Marine_Male_01_HairStyle_03_Gameplay"
+        ]
+      ],
+      {
+        "from": 70,
+        "from_feet": true,
+        "smooth": true,
+        "ignore_cast": true
+      },
+      "characters\\captain\\captain",
+      3,
+      [
+        "/Game/characters/NavyCrew/Default/Materials/MI_NavyCrew_Command.MI_NavyCrew_Command",
+        "/Game/characters/NavyCrew/Default/Materials/MI_NavyCrew_Engineer.MI_NavyCrew_Engineer",
+        "/Game/characters/NavyCrew/Default/Materials/MI_NavyCrew_Science.MI_NavyCrew_Science"
+      ]
+    ]
+  ]
+}

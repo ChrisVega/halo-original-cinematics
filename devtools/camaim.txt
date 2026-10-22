@@ -1,0 +1,162 @@
+t=  0.50 keyes_x10_deck_1b      dist= 395cm yawoff=  -3.2 headpitch=  15.6 campitch=   4.0 roll=  -1.7
+t=  1.00 keyes_x10_deck_1b      dist= 369cm yawoff=  -3.6 headpitch=  15.3 campitch=   4.1 roll=  -1.7
+t=  1.50 keyes_x10_deck_1b      dist= 343cm yawoff=  -4.0 headpitch=  15.1 campitch=   4.1 roll=  -1.7
+t=  2.00 keyes_x10_deck_1b      dist= 317cm yawoff=  -4.4 headpitch=  14.8 campitch=   4.2 roll=  -1.7
+t=  2.50 keyes_x10_deck_1b      dist= 291cm yawoff=  -4.8 headpitch=  14.5 campitch=   4.3 roll=  -1.6
+t=  3.00 keyes_x10_deck_1b      dist= 265cm yawoff=  -5.1 headpitch=  14.0 campitch=   4.3 roll=  -1.6
+t=  3.50 keyes_x10_deck_1b      dist= 239cm yawoff=  -5.3 headpitch=  13.5 campitch=   4.4 roll=  -1.6
+t=  4.00 keyes_x10_deck_1b      dist= 213cm yawoff=  -5.5 headpitch=  12.9 campitch=   4.5 roll=  -1.5
+t=  4.50 keyes_x10_deck_1b      dist= 187cm yawoff=  -5.5 headpitch=  12.1 campitch=   4.5 roll=  -1.5
+t=  5.00 keyes_x10_deck_1b      dist= 161cm yawoff=  -5.4 headpitch=  11.0 campitch=   4.6 roll=  -1.5
+t=  5.50 keyes_x10_deck_1b      dist= 135cm yawoff=  -5.0 headpitch=   9.5 campitch=   4.7 roll=  -1.5
+t=  6.00 keyes_x10_deck_1b      dist= 110cm yawoff=  -4.2 headpitch=   7.3 campitch=   4.7 roll=  -1.4
+t=  6.50 keyes_x10_deck_1b      dist=  84cm yawoff=  -2.5 headpitch=   3.8 campitch=   4.8 roll=  -1.4
+t=  6.87   sound sound\dialog\x10\keyes02
+t=  7.00 keyes_react_1a         dist=  79cm yawoff=  10.4 headpitch=  17.2 campitch=  -2.9 roll=  17.2
+t=  7.50 keyes_react_1a         dist=  79cm yawoff=  10.2 headpitch=  17.1 campitch=  -2.5 roll=  17.1
+t=  8.00 keyes_react_1a         dist=  77cm yawoff=   9.4 headpitch=  17.3 campitch=  -2.1 roll=  17.0
+t=  8.37   sound sound\dialog\x10\cor02
+t=  8.50 keyes_react_1a         dist=  76cm yawoff=   9.0 headpitch=  17.5 campitch=  -1.6 roll=  17.0
+t=  9.00 keyes_react_1a         dist=  75cm yawoff=   8.8 headpitch=  17.6 campitch=  -1.2 roll=  16.9
+t=  9.50 keyes_react_1a         dist=  81cm yawoff=   8.4 headpitch=  16.1 campitch=  -0.8 roll=  16.9
+t= 10.00 keyes_react_1a         dist=  83cm yawoff=   8.2 headpitch=  15.5 campitch=  -0.3 roll=  16.8
+t= 10.37   sound sound\dialog\x10\cor03
+t= 10.50 keyes_x10_peer_walk_1  dist= 327cm yawoff=  -9.9 headpitch=  -8.0 campitch= -10.6 roll=  15.6
+t= 11.00 keyes_x10_peer_walk_1  dist= 345cm yawoff=  -9.2 headpitch=  -8.9 campitch= -10.8 roll=  16.4
+t= 11.50 keyes_x10_peer_walk_1  dist= 363cm yawoff=  -8.6 headpitch=  -9.8 campitch= -11.0 roll=  17.2
+t= 12.00 keyes_x10_peer_walk_1  dist= 381cm yawoff=  -7.9 headpitch= -10.6 campitch= -11.2 roll=  17.9
+t= 12.50 keyes_x10_peer_walk_1  dist= 398cm yawoff=  -7.3 headpitch= -11.3 campitch= -11.4 roll=  18.7
+t= 13.00 keyes_x10_peer_walk_1  dist= 367cm yawoff=  -8.5 headpitch= -13.6 campitch= -11.6 roll=  19.5
+t= 13.50 keyes_x10_peer_walk_1  dist= 319cm yawoff= -11.1 headpitch= -17.2 campitch= -11.8 roll=  20.2
+t= 14.00 keyes_x10_peer_walk_2  dist= 274cm yawoff= -15.3 headpitch= -21.4 campitch= -12.3 roll=  19.1
+t= 14.50 keyes_x10_peer_walk_2  dist= 233cm yawoff= -15.8 headpitch= -26.8 campitch= -12.8 roll=  16.9
+t= 15.00 keyes_x10_peer_walk_2  dist= 201cm yawoff= -10.0 headpitch= -33.3 campitch= -13.4 roll=  14.8
+t= 15.50 keyes_x10_peer_walk_2  dist= 182cm yawoff=   2.5 headpitch= -39.4 campitch= -14.0 roll=  12.7
+t= 15.70   sound sound\dialog\x10\keyes03
+t= 16.00 keyes_x10_peer_walk_3  dist= 173cm yawoff=  19.8 headpitch= -43.1 campitch= -13.0 roll=  11.0
+t= 16.50 keyes_x10_peer_walk_3  dist= 186cm yawoff=  36.6 headpitch= -40.0 campitch= -11.4 roll=   9.4
+t= 17.00 keyes_x10_peer_walk_3  dist= 213cm yawoff=  45.5 headpitch= -34.6 campitch=  -9.7 roll=   7.9
+t= 17.50 keyes_x10_peer_walk_3  dist= 237cm yawoff=  50.0 headpitch= -31.1 campitch=  -8.0 roll=   6.4
+t= 17.70   sound sound\dialog\x10\cor04
+t= 18.00 keyes_x10_peer_walk_3  dist= 253cm yawoff=  52.8 headpitch= -29.5 campitch=  -6.4 roll=   4.8
+t= 18.50 keyes_x10_peer_walk_3  dist= 262cm yawoff=  54.6 headpitch= -28.7 campitch=  -4.7 roll=   3.3
+t= 19.00 keyes_x10_peer_walk_3  dist= 276cm yawoff=  55.4 headpitch= -27.5 campitch=  -3.0 roll=   1.7
+t= 19.50 keyes_x10_peer_walk_3  dist= 300cm yawoff=  54.2 headpitch= -25.4 campitch=  -1.4 roll=   0.2
+t= 20.00 keyes_x10_peer_walk_3  dist= 336cm yawoff=  50.0 headpitch= -22.8 campitch=   0.3 roll=  -1.3
+t= 20.50 keyes_x10_peer_walk_3  dist= 388cm yawoff=  40.6 headpitch= -19.8 campitch=   2.0 roll=  -2.9
+t= 21.00 keyes_x10_peer_walk_3  dist= 447cm yawoff=  27.2 headpitch= -17.3 campitch=   3.6 roll=  -4.4
+t= 21.50 keyes_x10_peer_walk_3  dist= 480cm yawoff=  12.5 headpitch= -16.3 campitch=   5.3 roll=  -5.9
+t= 22.00 keyes_x10_peer_walk_3  dist= 472cm yawoff=  -1.5 headpitch= -16.8 campitch=   6.9 roll=  -7.5
+t= 22.50 keyes_peer_2a          dist= 238cm yawoff=  10.6 headpitch=  18.0 campitch=   0.6 roll= -26.7
+t= 23.00 keyes_peer_2a          dist= 238cm yawoff=   8.8 headpitch=  18.0 campitch=   2.1 roll= -26.1
+t= 23.50 keyes_peer_2a          dist= 239cm yawoff=   6.9 headpitch=  18.0 campitch=   3.5 roll= -25.5
+t= 24.00 keyes_peer_2a          dist= 239cm yawoff=   5.0 headpitch=  17.9 campitch=   4.9 roll= -24.9
+t= 24.50 keyes_peer_2a          dist= 240cm yawoff=   3.1 headpitch=  17.9 campitch=   6.4 roll= -24.2
+t= 25.00 keyes_peer_2a          dist= 241cm yawoff=   1.2 headpitch=  17.8 campitch=   7.8 roll= -23.6
+t= 25.50 keyes_peer_2a          dist= 242cm yawoff=  -0.7 headpitch=  17.7 campitch=   9.2 roll= -23.0
+t= 26.00 keyes_peer_2a          dist= 243cm yawoff=  -2.7 headpitch=  17.7 campitch=  10.7 roll= -22.4
+t= 26.03   sound sound\dialog\x10\cor04b
+t= 26.50 keyes_x10_peer_1b      dist=1146cm yawoff=-177.5 headpitch=  -5.7 campitch=  12.5 roll= -17.4
+t= 27.00 keyes_x10_peer_1b      dist=1152cm yawoff=-177.1 headpitch=  -5.4 campitch=  11.4 roll= -16.0
+t= 27.50 keyes_x10_peer_1b      dist=1158cm yawoff=-176.7 headpitch=  -5.2 campitch=  10.2 roll= -14.6
+t= 28.00 keyes_x10_peer_1b      dist=1163cm yawoff=-176.3 headpitch=  -5.0 campitch=   9.1 roll= -13.2
+t= 28.50 keyes_x10_peer_1b      dist=  65cm yawoff= 140.0 headpitch=  22.2 campitch=   7.9 roll= -11.9
+t= 29.00 keyes_x10_peer_1b      dist=  70cm yawoff= 143.9 headpitch=  23.7 campitch=   6.7 roll= -10.5
+t= 29.50 keyes_x10_peer_1b      dist=  70cm yawoff= 143.9 headpitch=  23.7 campitch=   6.7 roll= -10.5
+t= 30.00 keyes_x10_peer_1b      dist=  70cm yawoff= 143.9 headpitch=  23.7 campitch=   6.7 roll= -10.5
+t= 30.03   sound sound\dialog\x10\keyes04
+t= 30.50 keyes_x10_display_walk_1b dist= 329cm yawoff= -21.9 headpitch= -17.4 campitch=  21.8 roll= -12.4
+t= 31.00 keyes_x10_display_walk_1b dist= 313cm yawoff= -26.2 headpitch= -18.3 campitch=  20.6 roll=  -9.5
+t= 31.50 keyes_x10_display_walk_1b dist= 271cm yawoff= -23.4 headpitch= -21.2 campitch=  19.4 roll=  -6.6
+t= 32.00 keyes_x10_display_walk_1b dist= 242cm yawoff= -16.8 headpitch= -23.9 campitch=  18.3 roll=  -3.7
+t= 32.03   sound sound\dialog\x10\cor05
+t= 32.50 keyes_x10_display_walk_1b dist= 231cm yawoff=  -6.8 headpitch= -25.1 campitch=  17.1 roll=  -0.8
+t= 33.00 keyes_x10_display_walk_1b dist= 242cm yawoff=   3.2 headpitch= -24.0 campitch=  15.9 roll=   2.1
+t= 33.50 keyes_x10_display_walk_1b dist= 270cm yawoff=  10.2 headpitch= -21.3 campitch=  14.7 roll=   5.0
+t= 34.00 keyes_x10_display_walk_1b dist= 310cm yawoff=  13.4 headpitch= -18.5 campitch=  13.6 roll=   8.0
+t= 34.50 keyes_x10_display_walk_1b dist= 350cm yawoff=  14.9 headpitch= -16.3 campitch=  12.4 roll=  10.9
+t= 35.00 keyes_x10_display_walk_1b dist= 388cm yawoff=  15.3 headpitch= -14.7 campitch=  11.2 roll=  13.8
+t= 35.50 keyes_x10_display_walk_1b dist= 425cm yawoff=  14.9 headpitch= -13.4 campitch=  10.0 roll=  16.7
+t= 36.00 keyes_x10_display_walk_1b dist= 450cm yawoff=  14.7 headpitch= -12.6 campitch=   8.9 roll=  19.6
+t= 36.50 keyes_x10_display_walk_1b dist= 456cm yawoff=  11.0 headpitch= -12.4 campitch=   7.7 roll=  22.5
+t= 36.70   sound sound\dialog\x10\cor05b
+t= 37.00 display_rev_1a         dist= 184cm yawoff=  -3.8 headpitch=  14.1 campitch= -10.8 roll=   0.1
+t= 37.50 display_rev_1b         dist= 182cm yawoff=  -3.9 headpitch=  14.0 campitch= -10.6 roll=   0.1
+t= 38.00 display_rev_1b         dist= 174cm yawoff=  -4.0 headpitch=  13.6 campitch= -10.0 roll=   0.1
+t= 38.50 display_rev_1b         dist= 167cm yawoff=  -4.2 headpitch=  13.1 campitch=  -9.4 roll=   0.1
+t= 39.00 display_rev_1b         dist= 159cm yawoff=  -4.3 headpitch=  12.6 campitch=  -8.8 roll=   0.1
+t= 39.50 display_rev_1b         dist= 151cm yawoff=  -4.5 headpitch=  12.1 campitch=  -8.2 roll=   0.1
+t= 40.00 display_rev_1b         dist= 144cm yawoff=  -4.6 headpitch=  11.5 campitch=  -7.5 roll=   0.1
+t= 40.50 display_rev_1b         dist= 136cm yawoff=  -4.7 headpitch=  10.8 campitch=  -6.9 roll=   0.0
+t= 41.00 display_rev_1b         dist= 129cm yawoff=  -4.9 headpitch=  10.0 campitch=  -6.3 roll=   0.0
+t= 41.50 display_rev_1b         dist= 121cm yawoff=  -5.0 headpitch=   9.2 campitch=  -5.7 roll=   0.0
+t= 42.00 display_rev_1b         dist= 114cm yawoff=  -5.1 headpitch=   8.2 campitch=  -5.0 roll=  -0.0
+t= 42.40   sound sound\dialog\x10\keyes05
+t= 42.50 thats_it_then_1b       dist=  63cm yawoff=  -1.6 headpitch=   0.5 campitch=   6.1 roll=   4.2
+t= 43.00 thats_it_then_1b       dist=  60cm yawoff=  -1.8 headpitch=  -0.0 campitch=   6.3 roll=   4.3
+t= 43.50 thats_it_then_1b       dist=  57cm yawoff=  -2.0 headpitch=  -0.6 campitch=   6.4 roll=   4.4
+t= 44.00 thats_it_then_1b       dist=  55cm yawoff=  -2.2 headpitch=  -1.3 campitch=   6.6 roll=   4.5
+t= 44.40   sound sound\dialog\x10\keyes06
+t= 44.50 keyes_x10_alert_1b     dist= 131cm yawoff= 162.8 headpitch=   9.9 campitch=  -0.2 roll=  10.0
+t= 45.00 keyes_x10_alert_1b     dist= 140cm yawoff= 150.0 headpitch=  11.6 campitch=   0.5 roll=   9.7
+t= 45.50 keyes_x10_alert_1b     dist= 163cm yawoff= 140.9 headpitch=  12.0 campitch=   1.1 roll=   9.4
+t= 46.00 keyes_x10_alert_1b     dist= 194cm yawoff= 136.3 headpitch=  11.8 campitch=   1.8 roll=   9.1
+t= 46.40   sound sound\dialog\x10\cor06
+t= 46.50 keyes_x10_alert_1b     dist= 230cm yawoff= 135.0 headpitch=  11.4 campitch=   2.5 roll=   8.8
+t= 47.00 keyes_x10_alert_1b     dist= 269cm yawoff= 136.0 headpitch=  10.9 campitch=   3.1 roll=   8.5
+t= 47.50 keyes_x10_alert_1b     dist= 311cm yawoff= 138.4 headpitch=  10.5 campitch=   3.8 roll=   8.2
+t= 48.00 keyes_x10_alert_1b     dist= 353cm yawoff= 141.9 headpitch=  10.2 campitch=   4.5 roll=   7.9
+t= 48.40   sound sound\dialog\x10\keyes07
+t= 48.50 keyes_x10_alert_1b     dist= 397cm yawoff= 146.1 headpitch=   9.9 campitch=   5.2 roll=   7.6
+t= 49.00 keyes_x10_alert_1b     dist= 440cm yawoff= 150.8 headpitch=   9.7 campitch=   5.8 roll=   7.3
+t= 49.50 keyes_x10_alert_1b     dist= 485cm yawoff= 155.8 headpitch=   9.4 campitch=   6.5 roll=   7.0
+t= 50.00 keyes_x10_alert_1b     dist= 530cm yawoff= 161.2 headpitch=   9.3 campitch=   7.2 roll=   6.7
+t= 50.40   sound sound\dialog\x10\keyes08
+t= 50.50 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 51.00 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 51.50 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 52.00 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 52.50 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 53.00 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 53.40   sound sound\dialog\x10\cor07
+t= 53.50 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 54.00 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 54.50 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 55.00 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 55.50 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 56.00 keyes_to_cortana_1     dist= 193cm yawoff= -18.5 headpitch=   4.2 campitch=   1.6 roll=  -3.0
+t= 56.40   sound sound\dialog\x10\keyes09
+t= 56.50 keyes_to_cortana_2     dist=  24cm yawoff= -53.4 headpitch= -24.0 campitch=  -3.6 roll=   6.0
+t= 57.00 keyes_to_cortana_2     dist=  24cm yawoff= -53.4 headpitch= -24.0 campitch=  -3.6 roll=   6.0
+t= 57.50 keyes_to_cortana_2     dist=  24cm yawoff= -53.4 headpitch= -24.0 campitch=  -3.6 roll=   6.0
+t= 58.00 keyes_to_cortana_2     dist=  24cm yawoff= -53.4 headpitch= -24.0 campitch=  -3.6 roll=   6.0
+t= 58.40   sound sound\dialog\x10\cor08
+t= 58.50 keyes_to_cortana_3a    dist= 138cm yawoff=-153.9 headpitch=   2.1 campitch=   7.1 roll=  20.1
+t= 59.00 keyes_to_cortana_3a    dist= 138cm yawoff=-153.9 headpitch=   2.1 campitch=   7.1 roll=  20.1
+t= 59.50 keyes_to_cortana_3a    dist= 138cm yawoff=-153.9 headpitch=   2.1 campitch=   7.1 roll=  20.1
+t= 60.00 keyes_to_cortana_3a    dist= 138cm yawoff=-153.9 headpitch=   2.1 campitch=   7.1 roll=  20.1
+t= 60.50 keyes_to_cortana_3b    dist= 141cm yawoff=-155.4 headpitch=   2.4 campitch=   3.1 roll=  16.6
+t= 61.00 keyes_to_cortana_3b    dist= 150cm yawoff=-161.0 headpitch=   3.3 campitch= -11.8 roll=   3.9
+t= 65.40   sound sound\dialog\x10\cor09
+t= 82.07   sound sound\dialog\x10\cor10
+t= 97.07   sound sound\dialog\x10\sgt01
+t= 99.07   sound sound\dialog\x10\cor11
+t=106.40   sound sound\dialog\x10\sgt05
+t=113.07   sound sound\dialog\x10\sgt05b
+t=115.07   sound sound\dialog\x10\mar01
+t=115.07   sound sound\dialog\x10\mar01
+t=115.07   sound sound\dialog\x10\mar01
+t=115.07   sound sound\dialog\x10\mar01
+t=115.07   sound sound\dialog\x10\mar01
+t=115.07   sound sound\dialog\x10\mar01
+t=115.07   sound sound\dialog\x10\mar01
+t=115.07   sound sound\dialog\x10\mar01
+t=117.07   sound sound\dialog\x10\sgt06
+t=119.07   sound sound\dialog\x10\cor12
+t=126.83   sound sound\dialog\x10\sgt07
+t=128.83   sound sound\dialog\x10\sgt08
+t=136.00   sound sound\dialog\x10\ass01
+t=139.00   sound sound\dialog\x10\tec01
+t=141.00   sound sound\dialog\x10\ass02
+t=141.00   sound sound\dialog\x10\ass03
+t=150.67   sound sound\dialog\x10\ass04

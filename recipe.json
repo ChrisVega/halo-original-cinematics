@@ -1,0 +1,99 @@
+{
+  "schemaVersion": 1,
+  "mode": "installed",
+  "games": [
+    {
+      "slug": "custom-halo-campaign-evolved",
+      "role": "primary"
+    },
+    {
+      "slug": "halo-mcc",
+      "role": "companion"
+    }
+  ],
+  "components": [
+    {
+      "id": "main",
+      "fileName": "OriginalCinematics-0.3.003.zip",
+      "label": "Original Cinematics",
+      "kind": "main",
+      "required": true
+    }
+  ],
+  "requirements": [],
+  "mappings": [
+    {
+      "component": "main",
+      "from": "OriginalCinematics/",
+      "to": "{game}/Meteorite/Binaries/Win64/ue4ss/Mods/OriginalCinematics"
+    },
+    {
+      "component": "main",
+      "from": "ue4ss/",
+      "to": "{game}/Meteorite/Binaries/Win64/ue4ss"
+    },
+    {
+      "component": "main",
+      "from": "dwmapi.dll",
+      "to": "{game}/Meteorite/Binaries/Win64"
+    },
+    {
+      "component": "main",
+      "from": "msvcp140.dll",
+      "to": "{game}/Meteorite/Binaries/Win64"
+    },
+    {
+      "component": "main",
+      "from": "msvcp140_atomic_wait.dll",
+      "to": "{game}/Meteorite/Binaries/Win64"
+    },
+    {
+      "component": "main",
+      "from": "msvcp140_codecvt_ids.dll",
+      "to": "{game}/Meteorite/Binaries/Win64"
+    },
+    {
+      "component": "main",
+      "from": "vcruntime140.dll",
+      "to": "{game}/Meteorite/Binaries/Win64"
+    },
+    {
+      "component": "main",
+      "from": "vcruntime140_1.dll",
+      "to": "{game}/Meteorite/Binaries/Win64"
+    },
+    {
+      "component": "main",
+      "from": "THIRD-PARTY-NOTICES.txt",
+      "to": "{game}/Meteorite/Binaries/Win64/ue4ss/Mods/OriginalCinematics"
+    }
+  ],
+  "launch": {
+    "kind": "game"
+  },
+  "runtimeData": [
+    "{localappdata}/OriginalCinematics"
+  ],
+  "notes": {
+    "firstLaunch": "Start Halo: Campaign Evolved and play the opening mission; the original intro replaces the video."
+  },
+  "test": {
+    "checks": [
+      "ready",
+      "scene-started"
+    ],
+    "minutes": 10
+  },
+  "settings": [
+    {
+      "file": "{localappdata}/OriginalCinematics/.env",
+      "set": {
+        "ORIGINAL_CINEMATICS_GAME_DIR": "{game}",
+        "ORIGINAL_CINEMATICS_MCC_DIR": "{game:halo-mcc}"
+      }
+    }
+  ]
+}
+
+
+
