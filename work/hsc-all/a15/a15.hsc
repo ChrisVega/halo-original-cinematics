@@ -78,9 +78,9 @@
 	(if (f_insertion_point_area_pending ins_start)
 		(begin
 			(cond
-				((= (game_difficulty_get_real) legendary) (f_play_cinematic cinematics\a10\a10_intro_legendary.cinematic))
-				((= (game_difficulty_get_real) heroic) (f_play_cinematic cinematics\a10\a10_intro_heroic.cinematic))
-				(true (f_play_cinematic cinematics\a10\a10_intro_normal.cinematic))
+				((= (game_difficulty_get_real) legendary) (print "Original Cinematics: intro movie off")                 )
+				((= (game_difficulty_get_real) heroic) (print "Original Cinematics: intro movie off")              )
+				(true (print "Original Cinematics: intro movie off")              )
 			)
 			;load necessary doors, etc.
 			(submit_incident_with_custom_string_id "game_activity_begin" "a10")
@@ -1011,7 +1011,7 @@
 		1
 	)
 
-	(f_play_cinematic cinematics\a10\a10_bridge.cinematic ps_post_bridge_cine)
+	(print "Original Cinematics: bridge movie off")                           
 	(wake chapter_a15_2)
 	(pre_bridge_cleanup)
 
